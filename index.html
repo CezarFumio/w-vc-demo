@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAMPLES</title>
+    <title>Tabela de Áudios Convertidos</title>
     <style>
         /* Estilo da tabela */
         table {
@@ -26,21 +26,34 @@
             width: 200px;  /* Tamanho fixo para o player de áudio */
         }
 
-        /* Deixar os players lado a lado */
-        .converted-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .converted-container h3 {
-            margin-right: 10px;
+        #protected-content {
+            display: none; /* Esconde o conteúdo protegido inicialmente */
         }
     </style>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            // Altere 'sua_senha' para a senha desejada
+            if (password === 'whisper') {  
+                document.getElementById('protected-content').style.display = 'block';
+                document.getElementById('login-form').style.display = 'none';
+            } else {
+                alert('Senha incorreta!');
+            }
+        }
+    </script>
 </head>
 <body>
-    <h1 style="text-align: center;">Whisper to Normal Conversion SAMPLES</h1>
+    <h1>Whisper to Normal Conversion SAMPLES</h1>
+    
+    <!-- Formulário de login -->
+    <div id="login-form">
+        <input type="password" id="password" placeholder="Digite a senha">
+        <button onclick="checkPassword()">Entrar</button>
+    </div>
 
+    <!-- Conteúdo protegido -->
+    <div id="protected-content">
 	<!-- Informações adicionais -->
     <p>
         <strong>WAV2VEC-VC</strong>: github: <a href="https://github.com/prairie-schooner/wav2vec-vc" target="_blank">https://github.com/prairie-schooner/wav2vec-vc</a> |
@@ -54,6 +67,15 @@
 	<br>
 	As amostras abaixo foram geradas a partir do modelo pré-treinados. Não houve nenhum tipo de treinamento com fala sussurrada.<br>
 	Hipótese: Se realizar o treinamento com a voz sussurrada afetará positivamente a conversão.
+	<br>
+	<br>
+	Task 44: A asa do avião andava avariada <br>
+	Task 45: Agora é hora de acabar <br>
+	Task 47: O Tiago comeu quatro peras <br>
+	
+
+
+
 
     </p>
 
@@ -366,11 +388,11 @@
                         <source src="audios/KNN-VC/SPF01/SPF01_47_02_converted.wav" type="audio/wav">
                         Seu navegador não suporta o elemento de áudio.
                     </audio>
-                </td>
-            </tr>
 
-        </tbody>
-    </table>
-
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
