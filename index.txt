@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudios Gerados</title>
+</head>
+<body>
+    <h1>Áudios Gerados</h1>
+    <ul>
+        <li><a href="audios/audio1.wav" target="_blank">Audio 1</a></li>
+        <li><a href="audios/audio2.wav" target="_blank">Audio 2</a></li>
+        <li><a href="audios/audio3.wav" target="_blank">Audio 3</a></li>
+    </ul>
+</body>
+</html>

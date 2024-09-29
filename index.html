@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMPLES</title>
+    <style>
+        /* Estilo da tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        audio {
+            width: 200px;  /* Tamanho fixo para o player de áudio */
+        }
+
+        /* Deixar os players lado a lado */
+        .converted-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .converted-container h3 {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Whisper to Normal Conversion SAMPLES</h1>
+
+	<!-- Informações adicionais -->
+    <p>
+        <strong>WAV2VEC-VC</strong>: github: <a href="https://github.com/prairie-schooner/wav2vec-vc" target="_blank">https://github.com/prairie-schooner/wav2vec-vc</a> |
+        artigo: <a href="https://ieeexplore.ieee.org/document/10447984" target="_blank">https://ieeexplore.ieee.org/document/10447984</a><br>
+        <strong>LVC-VC</strong>: github: <a href="https://github.com/wonjune-kang/lvc-vc" target="_blank">https://github.com/wonjune-kang/lvc-vc</a> |
+        artigo: <a href="https://arxiv.org/abs/2205.09784" target="_blank">https://arxiv.org/abs/2205.09784</a><br>
+        <strong>TRIAAN-VC</strong>: github: <a href="https://github.com/winddori2002/TriAAN-VC" target="_blank">https://github.com/winddori2002/TriAAN-VC</a> |
+        artigo: <a href="https://arxiv.org/abs/2303.09057" target="_blank">https://arxiv.org/abs/2303.09057</a><br>
+        <strong>KNN-VC</strong>: github: <a href="https://github.com/bshall/knn-vc" target="_blank">https://github.com/bshall/knn-vc</a> |
+        artigo: <a href="https://arxiv.org/abs/2305.18975" target="_blank">https://arxiv.org/abs/2305.18975</a><br>
+	<br>
+	As amostras abaixo foram geradas a partir do modelo pré-treinados. Não houve nenhum tipo de treinamento com fala sussurrada.<br>
+	Hipótese: Se realizar o treinamento com a voz sussurrada afetará positivamente a conversão.
+
+    </p>
+
+    <!-- Tabela com os players de áudio -->
+    <table>
+        <thead>
+            <tr>
+                <th>Source Speaker</th>
+                <th>Target Speaker</th>
+                <th colspan="4">Converted</th> <!-- Cabeçalho mesclado -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linha 1 da tabela -->
+            <tr>
+                <td rowspan="2">
+                    <h3>SPM01_44_02.wav</h3>
+                    <audio controls>
+                        <source src="audios/source/SPM01_44_02.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td rowspan="2">
+                    <h3>SPM01_48_01.wav</h3>
+                    <audio controls>
+                        <source src="audios/target/SPM01_48_01.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>wav2vec</h3>
+                    <audio controls>
+                        <source src="audios/WAV2VEC-VC/SPM01/SPM01_44_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>LVC</h3>
+                    <audio controls>
+                        <source src="audios/LVC-VC/SPM01/SPM01_44_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>TRIAAN</h3>
+                    <audio controls>
+                        <source src="audios/TRIAAN-VC/SPM01/SPM01_44_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>KNN</h3>
+                    <audio controls>
+                        <source src="audios/KNN-VC/SPM01/SPM01_44_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+
+            <!-- Linha 2 da tabela -->
+            <tr>
+                <td rowspan="2">
+                    <h3>SPM01_45_02.wav</h3>
+                    <audio controls>
+                        <source src="audios/source/SPM01_45_02.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td rowspan="2">
+                    <h3>SPM01_48_01.wav</h3>
+                    <audio controls>
+                        <source src="audios/target/SPM01_48_01.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>wav2vec</h3>
+                    <audio controls>
+                        <source src="audios/WAV2VEC-VC/SPM01/SPM01_45_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>LVC</h3>
+                    <audio controls>
+                        <source src="audios/LVC-VC/SPM01/SPM01_45_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>TRIAAN</h3>
+                    <audio controls>
+                        <source src="audios/TRIAAN-VC/SPM01/SPM01_45_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>KNN</h3>
+                    <audio controls>
+                        <source src="audios/KNN-VC/SPM01/SPM01_45_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+
+            <!-- Linha 3 da tabela -->
+            <tr>
+                <td rowspan="2">
+                    <h3>SPM01_47_02.wav</h3>
+                    <audio controls>
+                        <source src="audios/source/SPM01_47_02.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td rowspan="2">
+                    <h3>SPM01_48_01.wav</h3>
+                    <audio controls>
+                        <source src="audios/target/SPM01_48_01.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>wav2vec</h3>
+                    <audio controls>
+                        <source src="audios/WAV2VEC-VC/SPM01/SPM01_47_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>LVC</h3>
+                    <audio controls>
+                        <source src="audios/LVC-VC/SPM01/SPM01_47_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>TRIAAN</h3>
+                    <audio controls>
+                        <source src="audios/TRIAAN-VC/SPM01/SPM01_47_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>KNN</h3>
+                    <audio controls>
+                        <source src="audios/KNN-VC/SPM01/SPM01_47_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+<!-- Tabela com os players de áudio -->
+    <table>
+        <thead>
+            <tr>
+                <th>Source Speaker</th>
+                <th>Target Speaker</th>
+                <th colspan="4">Converted</th> <!-- Cabeçalho mesclado -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linha 1 da tabela -->
+            <tr>
+                <td rowspan="2">
+                    <h3>SPF01_44_02.wav</h3>
+                    <audio controls>
+                        <source src="audios/source/SPF01_44_02.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td rowspan="2">
+                    <h3>SPF01_48_01.wav</h3>
+                    <audio controls>
+                        <source src="audios/target/SPF01_48_01.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>wav2vec</h3>
+                    <audio controls>
+                        <source src="audios/WAV2VEC-VC/SPF01/SPF01_44_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>LVC</h3>
+                    <audio controls>
+                        <source src="audios/LVC-VC/SPF01/SPF01_44_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>TRIAAN</h3>
+                    <audio controls>
+                        <source src="audios/TRIAAN-VC/SPF01/SPF01_44_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>KNN</h3>
+                    <audio controls>
+                        <source src="audios/KNN-VC/SPF01/SPF01_44_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+
+            <!-- Linha 2 da tabela -->
+            <tr>
+                <td rowspan="2">
+                    <h3>SPF01_45_02.wav</h3>
+                    <audio controls>
+                        <source src="audios/source/SPF01_45_02.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td rowspan="2">
+                    <h3>SPF01_48_01.wav</h3>
+                    <audio controls>
+                        <source src="audios/target/SPF01_48_01.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>wav2vec</h3>
+                    <audio controls>
+                        <source src="audios/WAV2VEC-VC/SPF01/SPF01_45_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>LVC</h3>
+                    <audio controls>
+                        <source src="audios/LVC-VC/SPF01/SPF01_45_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>TRIAAN</h3>
+                    <audio controls>
+                        <source src="audios/TRIAAN-VC/SPF01/SPF01_45_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>KNN</h3>
+                    <audio controls>
+                        <source src="audios/KNN-VC/SPF01/SPF01_45_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+
+            <!-- Linha 3 da tabela -->
+            <tr>
+                <td rowspan="2">
+                    <h3>SPF01_47_02.wav</h3>
+                    <audio controls>
+                        <source src="audios/source/SPF01_47_02.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td rowspan="2">
+                    <h3>SPF01_48_01.wav</h3>
+                    <audio controls>
+                        <source src="audios/target/SPF01_48_01.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>wav2vec</h3>
+                    <audio controls>
+                        <source src="audios/WAV2VEC-VC/SPF01/SPF01_47_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>LVC</h3>
+                    <audio controls>
+                        <source src="audios/LVC-VC/SPF01/SPF01_47_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>TRIAAN</h3>
+                    <audio controls>
+                        <source src="audios/TRIAAN-VC/SPF01/SPF01_47_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+                <td>
+                    <h3>KNN</h3>
+                    <audio controls>
+                        <source src="audios/KNN-VC/SPF01/SPF01_47_02_converted.wav" type="audio/wav">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
